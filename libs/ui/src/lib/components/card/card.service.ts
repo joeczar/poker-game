@@ -75,6 +75,14 @@ export class CardService {
           [...valuesArray.slice(middleIndex + 1)],
         ];
       }
+      if (value === 10) {
+        // return 3 arrays of  4, 2, 4
+        return [
+          [...valuesArray.slice(0, 4)],
+          [...valuesArray.slice(4, 6)],
+          [...valuesArray.slice(6)],
+        ];
+      }
       const evenAndHigherThan3 = [
         [...valuesArray.slice(0, valuesArray.length / 2)],
         [...valuesArray.slice(valuesArray.length / 2)],

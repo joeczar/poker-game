@@ -1,6 +1,8 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
     "rootDir": ".",
     "sourceMap": true,
     "declaration": false,
@@ -15,7 +17,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@joeczar/poker-game-engine": ["libs/game-engin/src/index.ts"],
+      "@joeczar/poker-game-engine": ["libs/game-engine/src/index.ts"],
       "@joeczar/poker-ui": ["libs/ui/src/index.ts"]
     }
   },

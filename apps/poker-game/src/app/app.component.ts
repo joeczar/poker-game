@@ -2,11 +2,11 @@ import { NxWelcomeComponent } from './nx-welcome.component';
 import { RouterModule } from '@angular/router';
 import { Component } from '@angular/core';
 import { UiComponent } from '@joeczar/poker-ui';
-import { GameEnginComponent } from '@joeczar/poker-game-engine';
+import { GameEngineComponent } from '@joeczar/poker-game-engine';
 
 @Component({
   standalone: true,
-  imports: [NxWelcomeComponent, RouterModule, UiComponent, GameEnginComponent],
+  imports: [NxWelcomeComponent, RouterModule, UiComponent, GameEngineComponent],
   selector: 'poker-game-root',
   template: `
     <h1 class="text-xl bg-indigo-500">Poker Root</h1>

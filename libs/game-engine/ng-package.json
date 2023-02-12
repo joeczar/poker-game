@@ -1,6 +1,6 @@
 {
   "$schema": "../../node_modules/ng-packagr/ng-package.schema.json",
-  "dest": "../../dist/libs/game-engin",
+  "dest": "../../dist/libs/game-engine",
   "lib": {
     "entryFile": "src/index.ts"
   }

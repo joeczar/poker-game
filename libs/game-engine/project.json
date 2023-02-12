@@ -1,23 +1,23 @@
 {
-  "name": "game-engin",
+  "name": "game-engine",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "library",
-  "sourceRoot": "libs/game-engin/src",
+  "sourceRoot": "libs/game-engine/src",
   "prefix": "poker-game",
   "targets": {
     "build": {
       "executor": "@nrwl/angular:package",
       "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
       "options": {
-        "project": "libs/game-engin/ng-package.json",
-        "tailwindConfig": "libs/game-engin/tailwind.config.js"
+        "project": "libs/game-engine/ng-package.json",
+        "tailwindConfig": "libs/game-engine/tailwind.config.js"
       },
       "configurations": {
         "production": {
-          "tsConfig": "libs/game-engin/tsconfig.lib.prod.json"
+          "tsConfig": "libs/game-engine/tsconfig.lib.prod.json"
         },
         "development": {
-          "tsConfig": "libs/game-engin/tsconfig.lib.json"
+          "tsConfig": "libs/game-engine/tsconfig.lib.json"
         }
       },
       "defaultConfiguration": "production"
@@ -26,7 +26,7 @@
       "executor": "@nrwl/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
-        "jestConfig": "libs/game-engin/jest.config.ts",
+        "jestConfig": "libs/game-engine/jest.config.ts",
         "passWithNoTests": true
       },
       "configurations": {
@@ -41,8 +41,8 @@
       "outputs": ["{options.outputFile}"],
       "options": {
         "lintFilePatterns": [
-          "libs/game-engin/**/*.ts",
-          "libs/game-engin/**/*.html"
+          "libs/game-engine/**/*.ts",
+          "libs/game-engine/**/*.html"
         ]
       }
     }

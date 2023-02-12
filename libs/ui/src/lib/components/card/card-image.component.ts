@@ -1,15 +1,14 @@
 import { CommonModule } from '@angular/common';
 import { Component, HostBinding, Input, OnInit } from '@angular/core';
-import { cardValueMap } from '../../utilities/card.utilities';
 import { CardService } from './card.service';
-import { CardSuit, CardValue, CardImageObject } from './card.types';
+import { CardSuit, CardValue } from './card.types';
 
 @Component({
   selector: 'pg-ui-card-image',
   standalone: true,
   imports: [CommonModule],
   template: `
-    <div *ngIf="array1" class="arr1 flex flex-col justify-evenly">
+    <div *ngIf="array1" class="arr1 flex flex-col h-full justify-evenly">
       <ng-container *ngFor="let item of array1">
         <div *ngIf="cardService?.isFaceCard">
           {{ value }}
@@ -20,7 +19,7 @@ import { CardSuit, CardValue, CardImageObject } from './card.types';
       </ng-container>
     </div>
     <ng-container *ngIf="array2 && array2.length > 0">
-      <div *ngIf="array2" class="arr2 flex flex-col">
+      <div *ngIf="array2" class="arr2 flex flex-col h-full justify-evenly">
         <ng-container *ngFor="let item of array2">
           <div *ngIf="!isArray(item)">
             {{ item }}
@@ -29,7 +28,7 @@ import { CardSuit, CardValue, CardImageObject } from './card.types';
       </div>
     </ng-container>
     <ng-container *ngIf="array3 && array3.length > 0">
-      <div class="arr3 flex flex-col">
+      <div class="arr3 flex flex-col h-full justify-evenly">
         <ng-container *ngFor="let item of array3">
           <div *ngIf="!isArray(item)">
             {{ item }}

@@ -1,6 +1,6 @@
 /* eslint-disable */
 export default {
-  displayName: 'game-engin',
+  displayName: 'e',
   preset: '../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
   globals: {
@@ -9,7 +9,7 @@ export default {
       stringifyContentPathRegex: '\\.(html|svg)$',
     },
   },
-  coverageDirectory: '../../coverage/libs/game-engin',
+  coverageDirectory: '../../coverage/libs/game-engine',
   transform: {
     '^.+\\.(ts|mjs|js|html)$': 'jest-preset-angular',
   },
